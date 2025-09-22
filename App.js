@@ -1,14 +1,17 @@
-import {Stylesheet,Text,View } from 'react-native';
-
-import { Card } from 'react-native-paper';
-
-// or any files within the Snack
-import AssetExample from './components/AssetExample';
-
+import {StyleSheet,Text,View } from 'react-native';
+const styles = StyleSheet.create({
+  paragraph: {
+    margin: 32,
+    fontSize: 18,
+    textDecorationLine: 'underLine',
+    fontWeight: 'bold',
+    textAlign: 'center',
+  },
+});
 export default function App() {
   return (
     <View>
-      <Text> Hello,World </Text>
+      <Text style={styles.paragraph}>Hello,World </Text>
     </View>
   );
 }
