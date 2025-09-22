@@ -1,4 +1,6 @@
-import {StyleSheet,Text,View } from 'react-native';
+import {StyleSheet,Text,View,TextInput } from 'react-native';
+import React, {useState} from 'react';
+
 const styles = StyleSheet.create({
   paragraph: {
     margin: 32,
@@ -9,9 +11,13 @@ const styles = StyleSheet.create({
   },
 });
 export default function App() {
+  const [fullname, setFullname] = useState("Saikou Trawally");
   return (
     <View>
-      <Text style={styles.paragraph}>Hello,World </Text>
+      <Text style={styles.paragraph}>Hello,{fullname}</Text>
+     
     </View>
+
+    
   );
 }
