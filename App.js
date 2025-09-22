@@ -16,8 +16,13 @@ export default function App() {
     <View>
       <Text style={styles.paragraph}>Hello,{fullname}</Text>
      
-    </View>
+      <TextInput
+      style={styles.paragraph}
+      onChangeText={setFullname}
+      placeholder='Hello'
 
-    
+
+      />
+    </View>
   );
 }
